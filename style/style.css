@@ -17,8 +17,12 @@ h1{
 }
 
 h2{
-    font-size: 30px;
+    font-size: 27px;
     font-weight: bold;
+}
+
+p{
+    font-size: 1em;
 }
 
 /* FOOTER */
@@ -185,4 +189,12 @@ h2{
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+.about{
+    margin-bottom: 2em;
+}
+
+.text{
+    padding: 1.5em 1.5em;
 }
