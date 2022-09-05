@@ -47,15 +47,15 @@ h2{
     background-color: #dc9bf0;
 }
 /***********************************************************************************************************************************************************************************/
-
-
 /* Main Boady css */
 
-.header_logo{
-    margin-top: 3em;
-    text-align: center;
+.header{
+    margin-top: 2em;
+}
+.logo{
+    text-align: right;
 }
 
-.centered {
-    position: absolute;
-    bottom: 8px;
+.logo img{
+    margin-right: 10em;
+}
