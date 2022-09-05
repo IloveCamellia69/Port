@@ -5,7 +5,6 @@
     --accent-purple:#FF30E3;
 }
 
-
 body{
     font-family: 'Quicksand', sans-serif;
     padding-bottom: 5em;
@@ -23,12 +22,9 @@ h2{
 
 /* FOOTER */
 .footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     text-align: center;
-    padding-top: 0.7em;
+    padding: 0.7em 0 0.1em 0;
     background-color: var(--secondary-colour);
     color: var(--primary-colour);
 }
@@ -44,18 +40,31 @@ h2{
     border-radius: 100px;
     border: 5px solid transparent;
     background-clip: content-box;
-    background-color: #dc9bf0;
+    background-image: linear-gradient(to right, var(--accent-peach), var(--accent-pink));
 }
 /***********************************************************************************************************************************************************************************/
 /* Main Boady css */
 
 .header{
-    margin-top: 2em;
+    padding-bottom: 1em;
 }
+
 .logo{
     text-align: right;
 }
 
 .logo img{
-    margin-right: 10em;
+    margin-right: 5em;
+}
+
+.topnav a{
+    margin: 0 7px 0 7px;
+    float: right;
+    color: var(--secondary-colour);
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.tabs{
+    padding-top:1em;
 }
