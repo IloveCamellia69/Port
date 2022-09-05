@@ -8,7 +8,7 @@
 body{
     font-family: 'Quicksand', sans-serif;
     padding-bottom: 5em;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1{
@@ -34,19 +34,19 @@ h2{
 
 /* Scroll Bar */
 ::-webkit-scrollbar {
-    width: 19px;
+    width: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 100px;
     border: 5px solid transparent;
     background-clip: content-box;
-    background-image: linear-gradient(to right, var(--accent-peach), var(--accent-pink));
+    background-image: linear-gradient( var(--accent-pink), var(--accent-purple));
 }
 /***********************************************************************************************************************************************************************************/
-
-/* Main Boady css */
+/* Header */
 .header{
+    background-color: var(--primary-colour);
     padding-bottom: 1em;
 }
 
@@ -70,10 +70,12 @@ h2{
     padding-top:1em;
 }
 
+/* Stylescape scrolling image */
 .wrapper{
     height: 400px;
     position:relative; 
     overflow:hidden;
+    margin-bottom: 4em;
 }
   
 .stylescape{
@@ -96,4 +98,91 @@ h2{
     100% {
         transform: translate(-40%, 0);
     }
+}
+
+/* Pledge card */
+.card{
+    width: 18rem;
+    float: right;
+    margin-right:2.5em;
+    position: sticky;
+    top: 4rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 25px;
+  display: inline-block;
+  transition: all 0.2s;
+  position: absolute;
+  border-radius: 100px;
+  border: 2px solid var(--accent-purple);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+    background-color: var(--primary-colour);
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  -webkit-animation: moveInBottom 5s ease-out;
+          animation: moveInBottom 5s ease-out;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
