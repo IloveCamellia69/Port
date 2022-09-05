@@ -33,7 +33,6 @@ p{
     background-color: var(--secondary-colour);
     color: var(--primary-colour);
 }
-/* FOOTER END */
 
 
 /* Scroll Bar */
@@ -47,7 +46,9 @@ p{
     background-clip: content-box;
     background-image: linear-gradient( var(--accent-pink), var(--accent-purple));
 }
+
 /***********************************************************************************************************************************************************************************/
+
 /* Header */
 .header{
     background-color: var(--primary-colour);
@@ -106,7 +107,7 @@ p{
 
 /* Pledge card */
 .card{
-    width: 18rem;
+    width: 15em;
     float: right;
     margin-right:2.5em;
     position: sticky;
@@ -195,6 +196,10 @@ p{
     margin-bottom: 2em;
 }
 
-.text{
+.body-text{
     padding: 1.5em 1.5em;
+}
+
+.text{
+    margin-bottom: 2em;
 }
