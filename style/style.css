@@ -8,6 +8,7 @@
 body{
     font-family: 'Quicksand', sans-serif;
     padding-bottom: 5em;
+    overflow: hidden;
 }
 
 h1{
@@ -43,8 +44,8 @@ h2{
     background-image: linear-gradient(to right, var(--accent-peach), var(--accent-pink));
 }
 /***********************************************************************************************************************************************************************************/
-/* Main Boady css */
 
+/* Main Boady css */
 .header{
     padding-bottom: 1em;
 }
@@ -54,7 +55,7 @@ h2{
 }
 
 .logo img{
-    margin-right: 5em;
+    margin-right: 15em;
 }
 
 .topnav a{
@@ -67,4 +68,32 @@ h2{
 
 .tabs{
     padding-top:1em;
+}
+
+.wrapper{
+    height: 400px;
+    position:relative; 
+    overflow:hidden;
+}
+  
+.stylescape{
+    position:absolute; 
+    top:0px; 
+    left:0px; 
+    overflow:hidden; 
+    white-space: nowrap;
+    animation: bannermove 20s linear infinite;
+}
+  
+.stylescape img {
+    height: 400px; 
+}
+  
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-40%, 0);
+    }
 }
