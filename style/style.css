@@ -52,10 +52,29 @@ p{
 
 /***********************************************************************************************************************************************************************************/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Header */
-.header{
+
+header{
+  position: sticky;
+  top: 0em;
+  margin-bottom: 3em;
+}
+
+.head{
     background-color: var(--primary-colour);
-    padding-bottom: 1em;
 }
 
 .logo{
@@ -78,43 +97,13 @@ p{
     padding-top:1em;
 }
 
-/* Stylescape scrolling image */
-.wrapper{
-    height: 400px;
-    position:relative; 
-    overflow:hidden;
-    margin-bottom: 4em;
-}
-  
-.stylescape{
-    position:absolute; 
-    top:0px; 
-    left:0px; 
-    overflow:hidden; 
-    white-space: nowrap;
-    animation: bannermove 20s linear infinite;
-}
-  
-.stylescape img {
-    height: 400px; 
-}
-  
-@keyframes bannermove {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-40%, 0);
-    }
-}
-
 /* Pledge card */
 .card{
     width: 20em;
     float: right;
     margin-right:2.5em;
     position: sticky;
-    top: 4rem;
+    top: 10rem;
 }
 
 .btn:link,
