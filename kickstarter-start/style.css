@@ -1,0 +1,66 @@
+/*
+Theme Color: #673AB7;
+Accent Color: #FA8172;
+Text Color: #333333;
+*/
+
+*{
+    box-sizing: border-box;
+}
+/* Typgraphy */
+/* set baseline font-size, text color and line-height here*/
+html{
+    font-size: 1.25em;
+    color: #333333;
+    line-height: 1.4;
+}
+
+/* set the body font here */
+body{
+    margin: 0;
+}
+
+/* set heading font here */
+h1, h2, h3{}
+
+/* set styles for individual heading styles here */
+h1{}
+
+h2{}
+
+h3{}
+
+p{
+    margin: 1.4em 0;
+}
+
+/* layout */
+/* set max-width for content here */
+.wrapper{
+    padding: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+}
+
+/* header styles */
+header{}
+
+header .wrapper{}
+
+/* main styles */
+main img{}
+
+/* set the video size and aspect ratio here */
+main iframe{}
+
+/* footer styles */
+footer{}
+
+footer p{
+    margin: 0;
+    text-align: right;
+}
