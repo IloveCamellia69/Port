@@ -1,4 +1,4 @@
-var delay = 1000 * 2.5;
+var delay = 1000 * 3.5;
     setTimeout(function() {
         location.hash = "#jump";
     }, delay);

@@ -50,23 +50,52 @@ p{
     background-image: linear-gradient( var(--accent-pink), var(--accent-purple));
 }
 
+
+/* section seperation */
+section{
+  height: 6em;
+}
 /***********************************************************************************************************************************************************************************/
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* Animated Scroll icon */
+.scroll-down {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  margin-top: 53em;
+  width :34px;
+  height: 55px;
+}
+.mouse {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid var(--secondary-colour);
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: var(--secondary-colour);
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
 
 /* Header */
-
 header{
   position: sticky;
   top: 0em;
@@ -74,7 +103,8 @@ header{
 }
 
 .head{
-    background-color: var(--primary-colour);
+    background-color: #fcfcfc;
+    height:90px;
 }
 
 .logo{
@@ -82,9 +112,11 @@ header{
 }
 
 .logo img{
+    margin-top: 1.5em;
     margin-right: 15em;
 }
 
+/* Navigation bar */
 .topnav a{
     margin: 0 7px 0 7px;
     float: right;
@@ -184,6 +216,7 @@ header{
   }
 }
 
+/* Card Progress bar */
 .progress {
     background: #6e6e6e3f;
     justify-content: flex-start;
@@ -194,22 +227,22 @@ header{
     height: 1em;
     width:280px;
     margin-bottom: 20px;
-  }
+}
   
-  .progress-value {
+.progress-value {
     animation: load 3s normal forwards;
     border-radius: 100px;
     background-image: linear-gradient(to right, var(--accent-pink), var(--accent-purple));
     height: 30px;
     width: 0;
-  }
+}
   
-  @keyframes load {
+@keyframes load {
     0% { width: 0; }
     100% { width: 79%; }
-  }
+}
 
-
+/* About Section */
 .about{
     margin-bottom: 1em;
 }
@@ -222,8 +255,9 @@ header{
     margin-bottom: 2em;
 }
 
+/* Video */
 .video iframe{
-    margin: 2em 10em;
-    width: 75%;
+  margin-top: 2em;
+    width: 100%;
     aspect-ratio: 16 / 9; ;
 }
