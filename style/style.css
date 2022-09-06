@@ -139,6 +139,7 @@ header{
 .logo img{
     margin-top: 1.5em;
     margin-right: 15em;
+    border-radius: 17px;
 }
 
 /* Navigation bar */
@@ -160,7 +161,7 @@ header{
     float: right;
     margin-right:4em;
     position: sticky;
-    top: 36rem;
+    top: 38rem;
     border-radius: 15px;
 }
 
