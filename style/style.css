@@ -28,6 +28,10 @@ p{
     padding: 0 10em;
 }
 
+.animated_logo{
+  text-align: center;
+}
+
 /* FOOTER */
 .footer{
     width: 100%;
