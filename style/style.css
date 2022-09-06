@@ -110,7 +110,7 @@ section{
   border-radius: 25%;
   background-color: var(--secondary-colour);
   animation-name: scroll;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
   animation-iteration-count: infinite;
 }
