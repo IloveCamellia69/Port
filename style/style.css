@@ -243,10 +243,6 @@ header{
 }
 
 /* About Section */
-.about{
-    margin-bottom: 1em;
-}
-
 .body-text{
     padding: 1.5em 1.5em;
 }
@@ -260,4 +256,9 @@ header{
   margin-top: 2em;
     width: 100%;
     aspect-ratio: 16 / 9; ;
+}
+
+/* Operation */
+.operations-img{
+  margin-top:1em;
 }
