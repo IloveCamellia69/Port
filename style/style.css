@@ -46,6 +46,10 @@ p{
   padding-left: 1em;
 }
 
+footer ul {
+  padding-left: 6rem;
+}
+
 /* Scroll Bar */
 ::-webkit-scrollbar {
     width: 15px;
@@ -60,7 +64,7 @@ p{
 
 .row{
   margin-top: 2em;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 
 .about ul,
@@ -69,13 +73,11 @@ p{
   list-style-type: none;
 }
 
-
 /* section seperation */
 section{
   height: 6em;
 }
 /***********************************************************************************************************************************************************************************/
-
 
 /* Animated Scroll icon */
 .scroll-down {
@@ -87,7 +89,7 @@ section{
   margin: auto;
   margin-top: 53em;
   width :34px;
-  height: 55px;
+  height: 50px;
 }
 .mouse {
   width: 3px;
@@ -104,7 +106,7 @@ section{
   border-radius: 25%;
   background-color: var(--secondary-colour);
   animation-name: scroll;
-  animation-duration: 2.2s;
+  animation-duration: 1s;
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
   animation-iteration-count: infinite;
 }
@@ -250,7 +252,7 @@ header{
 }
   
 .progress-value {
-    animation: load 5s normal forwards;
+    animation: load 10s normal forwards;
     border-radius: 100px;
     background-image: linear-gradient(to right, var(--accent-pink), var(--accent-purple));
     height: 30px;
