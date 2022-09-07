@@ -25,7 +25,7 @@
                                 '<div><input type="radio" name="amount" value="25000" required><label>$25,000</label></div>',
                                 '<div><input type="radio" name="amount" value="50000"><label>$50,000</label></div>',
                                 // '<div><input type="radio" name="amount" value="75000"><label>$75,000</label></div>',
-                                '<div><input type="radio" name="amount" value="2147483646"><label>$2,147,483,646</label></div>',
+                                '<div><input type="radio" name="amount" value="75000"><label>$75,000</label></div>',
                             '</div>',
                             '<div class="btn">',
                                 '<input type="submit" value="Pledge">',
