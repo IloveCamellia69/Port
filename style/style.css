@@ -99,16 +99,20 @@ footer ul {
     margin-bottom: 3em;
 }
 
+.about,
+.support,
+.company{
+    padding-left: 1em;
+}
+
 .about ul,
 .support ul,
 .company ul{
     list-style-type: none;
 }
 
-.about,
-.support,
-.company{
-    padding-left: 1em;
+footer a{
+    color: var(--primary-colour);
 }
 
 /* Scroll Bar */
