@@ -245,7 +245,7 @@ header{
 
 /* Card Progress bar */
 .progress {
-    background: #6e6e6e3f;
+    background: #6e6e6e;
     justify-content: flex-start;
     border-radius: 100px;
     align-items: center;
