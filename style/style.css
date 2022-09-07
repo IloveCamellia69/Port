@@ -26,6 +26,44 @@ p{
     font-size: 1em;
 }
 
+/* Button */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button{
+    background-color: var(--primary-colour);
+    color: var(--secondary-colour);
+}
+
+button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+button::after {
+    background-color: var(--primary-colour);
+}
+
+button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
 /* section seperation */
 section{
     height: 6em;
@@ -162,7 +200,7 @@ header{
 .card{
     width: 20em;
     float: right;
-    margin-right:4em;
+    margin-right:1.5em;
     position: sticky;
     top: 38rem;
     border-radius: 15px;
@@ -170,82 +208,15 @@ header{
 }
 
 /* Button */
-.btn:link,
-.btn:visited {
+.card-body button{
     text-transform: uppercase;
     text-decoration: none;
-    padding: 10px 25px;
+    padding: 15px 25px;
     display: inline-block;
     transition: all 0.2s;
     position: absolute;
     border-radius: 100px;
     border: 2px solid var(--accent-purple);
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-white {
-    background-color: var(--primary-colour);
-    color: var(--secondary-colour);
-}
-
-.btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-}
-
-.btn-white::after {
-    background-color: var(--primary-colour);
-}
-
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.btn-animated {
-    -webkit-animation: moveInBottom 5s ease-out;
-    animation: moveInBottom 5s ease-out;
-    -webkit-animation-fill-mode: backwards;
-    animation-fill-mode: backwards;
-}
-
-@-webkit-keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
 }
 
 /* Card Progress bar */
@@ -306,9 +277,14 @@ header{
     text-align: center;
 }
 
-.end-back-btn .btn:link,
-.end-back-btn .btn:visited{
-  padding: 10px 50px;
-  margin: 2.5em 0 0 0;
-  position: relative;
+.end-back-btn button{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: inline-block;
+    transition: all 0.2s;
+    position: relative;
+    border-radius: 100px;
+    border: 2px solid var(--accent-purple);
+    margin: 2em 0 1.5em 0;
 }
