@@ -9,7 +9,6 @@ body{
     font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
     background-color: #fcfcfc;
-    height: 3850px;
 }
 
 h1{
@@ -170,6 +169,7 @@ header{
     position: sticky;
     top: 0em;
     margin-bottom: 3em;
+    z-index: 1;
 }
 
 .head{
@@ -201,6 +201,12 @@ header{
 }
 
 /* Pledge card */
+.card-div-test{
+    height:2700px;
+    position: absolute;
+    margin-left: 2200px;
+}
+
 .card{
     width: 20em;
     float: right;
