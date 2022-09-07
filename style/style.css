@@ -295,5 +295,6 @@ header{
 }
 
 .app iframe{
-    padding-left: 30px;
+    margin-left: 30px;
+    border-radius: 50px;
 }
