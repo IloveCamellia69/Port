@@ -9,6 +9,7 @@ body{
     font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
     background-color: #fcfcfc;
+    height: 3850px;
 }
 
 h1{
@@ -140,7 +141,7 @@ header{
 
 .logo img{
     margin-top: 1.5em;
-    margin-right: 15em;
+    margin-right: 18em;
     border-radius: 17px;
 }
 
@@ -165,6 +166,7 @@ header{
     position: sticky;
     top: 38rem;
     border-radius: 15px;
+    margin-top: 59em;
 }
 
 /* Button */
@@ -297,4 +299,16 @@ header{
 .app iframe{
     margin-left: 30px;
     border-radius: 50px;
+}
+
+/* end back us button */
+.end-back-btn{
+    text-align: center;
+}
+
+.end-back-btn .btn:link,
+.end-back-btn .btn:visited{
+  padding: 10px 50px;
+  margin: 2.5em 0 0 0;
+  position: relative;
 }
