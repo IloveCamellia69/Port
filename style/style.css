@@ -260,7 +260,7 @@ header{
 }
   
 .progress-value {
-    animation: load 10s normal forwards;
+    animation: load 3s normal forwards;
     border-radius: 100px;
     background-image: linear-gradient(to right, var(--accent-pink), var(--accent-purple));
     height: 30px;
@@ -286,6 +286,7 @@ header{
     margin-top: 2em;
     width: 100%;
     aspect-ratio: 16 / 9; ;
+    border-radius: 20px;
 }
 
 /* operationss */
