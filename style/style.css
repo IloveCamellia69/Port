@@ -209,17 +209,18 @@ header{
 .card-div-test{
     height:2700px;
     position: absolute;
-    margin-left: 2200px;
+    /* margin-left: 1870px; */
+    left: 95vw;
 }
 
 .card{
     width: 20em;
     float: right;
-    margin-right:1.5em;
     position: sticky;
     top: 38rem;
     border-radius: 17px;
     margin-top: 59em;
+    margin-left: -20em;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
     border: 0;
 }
