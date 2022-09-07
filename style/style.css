@@ -218,9 +218,10 @@ header{
     margin-right:1.5em;
     position: sticky;
     top: 38rem;
-    border-radius: 15px;
+    border-radius: 17px;
     margin-top: 59em;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
+    border: 0;
 }
 
 /* Button */
